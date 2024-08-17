@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 任务梳理助手</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="welcome-screen" class="screen">
+            <h1>欢迎使用 AI 任务梳理助手</h1>
+            <p>不知道从何开始？感到混乱？让我们一起梳理您的任务和目标吧！</p>
+            <button id="start-button">开始梳理</button>
+        </div>
+        
+        <div id="question-screen" class="screen" style="display:none;">
+            <h2 id="question-title"></h2>
+            <p id="question-description"></p>
+            <textarea id="user-input" rows="4" placeholder="请在这里输入您的回答..."></textarea>
+            <button id="next-button">下一步</button>
+        </div>
+        
+        <div id="analysis-screen" class="screen" style="display:none;">
+            <h2>AI 正在分析您的回答</h2>
+            <div class="loader"></div>
+        </div>
+        
+        <div id="plan-screen" class="screen" style="display:none;">
+            <h2>您的个性化计划</h2>
+            <div id="plan-content"></div>
+            <button id="adjust-button">调整计划</button>
+            <button id="confirm-button">确认计划</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
